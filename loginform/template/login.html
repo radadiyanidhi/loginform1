@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table border="4">
+	<form name="form" action="{%url 'login' %}" method="POST">
+		{%csrf_token%}
+		{{form}}
+		<td colspan="2"><center><input type="submit" value="submit"/></center></td>
+	</form>
+</table>
+</body>
+</html>

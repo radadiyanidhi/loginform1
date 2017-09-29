@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table border="4">
+	<form name="form" action="{%url 'logout' %}" method="POST">
+		{%csrf_token%}
+		<tr>
+			<td colspan="2"><strong>Loggedin user</strong></td>
+		</tr>
+		<td>{{username}}</td>
+		<td><center><input type="submit" value="logout"/></td>
+	</form>
+</table>
+</body>
+</html>
